@@ -24,3 +24,6 @@ Route::get("exercise4", function() {return redirect('exercise4/connect');});
 Route::get("exercise4/connect", function() {return view("connect");});
 Route::get("exercise4/create", function() {return view("create");});
 Route::get("exercise4/contact", function() {return view("contact");});
+
+Route::get('exercise4/connect', 'App\Http\Controllers\studentController@createUserForm');
+Route::post('exercise4/connect', 'App\Http\Controllers\studentController@UserForm');
