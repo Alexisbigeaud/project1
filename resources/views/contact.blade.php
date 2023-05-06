@@ -1,5 +1,6 @@
 @extends("mainpage")	 
 @section('content')
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <h2>Contact form</h2>
     <form method="POST" action="{{ url('exercise4/create_contact') }}">
         {{ csrf_field() }}
