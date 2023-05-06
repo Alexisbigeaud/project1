@@ -39,3 +39,11 @@ Route::get('/posts/{post}', [PostController::class, 'show'])->name('show');
 Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('edit');
 Route::put('/posts/{id}', [PostController::class, 'update'])->name('update');
 Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('destroy');
+
+Route::get('/students', [\App\Http\Controllers\NewstudentController::class, 'index1'])->name('newindex');
+Route::get('/students/create', [\App\Http\Controllers\NewstudentController::class, 'create1'])->name('newcreate');
+Route::post('/students', [\App\Http\Controllers\NewstudentController::class, 'store1'])->name('store1');
+Route::get('/students/{student}', [\App\Http\Controllers\NewstudentController::class, 'show1'])->name('newshow');
+Route::get('/students/{student}/edit', [\App\Http\Controllers\NewstudentController::class, 'edit1'])->name('newedit');
+Route::put('/students/{id}', [\App\Http\Controllers\NewstudentController::class, 'update1'])->name('update1');
+Route::delete('/students/{student}', [\App\Http\Controllers\NewstudentController::class, 'destroy1'])->name('destroy1');
