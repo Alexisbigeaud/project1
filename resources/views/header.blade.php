@@ -6,7 +6,7 @@
     <a class="{{ Request::is('exercise4/connect') ? 'active' : '' }}"
       href="/exercise4/connect">Students informations</a>
     <a class="{{ Request::is('exercise4/create') ? 'active' : '' }}"
-      href="/posts">Galerie of our school</a>
+      href="/posts">Gallery of our school</a>
     <a class="{{ Request::is('exercise4/contact') ? 'active' : '' }}"
       href="/exercise4/contact">Contact</a>
 
